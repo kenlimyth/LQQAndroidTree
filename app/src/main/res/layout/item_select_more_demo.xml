@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.15dp"
+            android:background="#E6E6E6" />
+
+        <CheckBox
+            android:id="@+id/cb_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            android:button="@null"
+            android:drawableRight="@drawable/check_box_selector"
+            android:gravity="center_vertical|left"
+            android:minHeight="35dp"
+            android:text="正常"
+            android:textColor="#474B57"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+</layout>

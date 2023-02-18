@@ -1,0 +1,9 @@
+rootProject.name = "LQQAndroidTree"
+include ':app'
+
+
+//include ':LQQAndroid'
+//project(':LQQAndroid').projectDir = new File(settingsDir,'../LQQAndroid')
+//include ':LQQAndroid:LQQLib'
+//include ':LQQAndroid:module_grayscale'
+//include ':LQQAndroid:module_camera'
