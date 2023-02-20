@@ -1,4 +1,5 @@
 ---
+
 typora-root-url: ./
 ---
 
@@ -12,13 +13,26 @@ typora-root-url: ./
 
 ![](/5efbd02757d3c1180a1dbb81a345b1f5.gif)
 
+### 使用说明：开箱即用，直接运行项目即可。RecyclerViewTreeDemo里有详细的使用例子。
+
+```
+//模拟数据，接口接收到数据按下面的结构填充bean即可
+TreeBean treeBean = new TreeBean(1 + "", "root", 0,  new ArrayList<>());
+treeBean.children.add(new TreeBean("22", "一层", 1,  new ArrayList<>()));
+treeBean.children.get(0).children.add(new TreeBean("33", "二层", 2, new ArrayList<>()));
+treeBean.children.get(0).children.get(0).children.add(new TreeBean("44", "三层", 3,  new ArrayList<>()));
 
 
 
+```
+
+### 设置默认打开，关闭
 
 ```
 treeBean.children.get(0).setShowAll(false);//设置默认打开，关闭
 ```
+
+### 关键代码
 
 ```
 /**
